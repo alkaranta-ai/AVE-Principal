@@ -2,75 +2,59 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.V.E. | Cosmiatría Holística</title>
     <style>
-        :root {
-            --color-principal: #8a8d79;
-            --color-fondo: #f5f3ef;
-            --color-acento: #5b5f48;
-            --vidrio-fondo: rgba(255, 255, 255, 0.4);
-            --vidrio-borde: rgba(255, 255, 255, 0.3);
-        }
-
         body {
-            background-color: var(--color-fondo);
-            color: var(--color-principal);
-            font-family: 'Segoe UI', sans-serif;
+            background-color: #fcfbf9; /* Un tono crema más fino */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #5b5f48;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .glass-card {
-            background: var(--vidrio-fondo);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid var(--vidrio-borde);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
             text-align: center;
+        }
+        .hero {
+            padding: 60px 20px;
+        }
+        .logo-img {
+            width: 120px; /* Logo más pequeño y delicado */
             margin-bottom: 20px;
         }
-
-        .cta-btn {
-            display: inline-block;
-            background-color: var(--color-acento);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            margin-top: 15px;
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
+        .cta-btn {
+            background-color: #8a8d79;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { background-color: #5b5f48; }
+        
+        /* Estilo de lista más limpio */
+        ul { list-style: none; padding: 0; }
+        li { margin: 15px 0; font-size: 1.1rem; }
     </style>
 </head>
 <body>
 
-    <section id="hero" class="glass-card">
-        <!-- Asegúrate de tener el archivo logo.png en tu repo -->
-        <img src="logo.png" alt="Logo A.V.E." style="max-width: 150px; border-radius: 50%; margin-bottom: 15px;">
+    <section class="hero">
+        <img src="logo.png" class="logo-img" alt="Logo">
         <h1>A.V.E.</h1>
         <p>El equilibrio entre la salud de tu piel y tu bienestar integral.</p>
+        <br><br>
         <a href="#contacto" class="cta-btn">Reservar Turno</a>
     </section>
 
-    <section class="glass-card">
-        <h2>Nuestros Tratamientos</h2>
-        <p>Limpieza Profunda con enfoque holístico</p>
-        <p>Tratamientos de Rejuvenecimiento Facial</p>
-        <p>Terapias de Bienestar y Masajes</p>
-    </section>
-
-    <section id="contacto" class="glass-card">
-        <h2>Contacto</h2>
-        <p>Agenda tu sesión personalizada vía WhatsApp.</p>
-        <!-- Reemplaza 549XXXXXXXXXX con el número real -->
-        <a href="https://wa.me/549XXXXXXXXXX" class="cta-btn">Hablar con A.V.E.</a>
+    <section>
+        <h2 class="section-title">Nuestros Tratamientos</h2>
+        <ul>
+            <li>✨ Limpieza Profunda</li>
+            <li>✨ Rejuvenecimiento Facial</li>
+            <li>✨ Terapias de Bienestar</li>
+        </ul>
     </section>
 
 </body>
